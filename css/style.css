@@ -22,3 +22,6 @@
 .card-text{
     font-size: 30px;
 }
+.shadow-card{
+    box-shadow: 10px 10px 9px black;
+}
