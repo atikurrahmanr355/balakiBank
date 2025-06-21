@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section class="bank-home">
-        <articale class="bank-login">
+    <section id="bank-home">
+        <article class="bank-login">
             <div class="container">
                 <div class="row">
                     <div class="bank-home col-11 m-auto d-flex justify-content-center align-items-center">
@@ -24,22 +24,25 @@
                                     <div class="form-group">
                                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                     </div>
-                                    <button type="submit" class="btn btn-success">Enter</button>
+                                    
                                 </form>
+                                <button type="submit" id="login" class="btn btn-success">Enter</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </articale>
+        </article>
     </section>
-    <section class="mybank d-flex justify-content-center align-items-center">
+
+    <section id="my-bank" class="mybank pt-5">
+        <div class="d-flex justify-content-center align-items-center">
         <div class="container">
             <div class="row">
                 <div class="col-12 balance-info ">
                     <div class="row">
                         <div class="col-4">
-                        <div class="card text-white bg-primary mb-5 short-info shadow-card">
+                        <div class="card text-white bg- mb-5 short-info shadow-card" style="background-color:slateblue;">
                             <div class="card-body">
                                 <h5 class="card-title">Deposit</h5>
                                 <p class="card-text h4">$ 00</p>
@@ -47,7 +50,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card text-white bg-warning mb-5 short-info shadow-card">
+                        <div class="card text-white bg- mb-5 short-info shadow-card" style="background-color: lightsalmon;">
                             <div class="card-body">
                                 <h5 class="card-title">Withdrow</h5>
                                 <p class="card-text h4 ">$ 00</p>
@@ -55,7 +58,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card text-white bg-success mb-5 short-info shadow-card">
+                        <div class="card text-white bg- mb-5 short-info shadow-card" style="background-color: orange;">
                             <div class="card-body">
                                 <h5 class="card-title">Balance</h5>
                                 <p class="card-text h4">$ 1240</p>
@@ -86,9 +89,11 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <script src="/js/jquery.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
