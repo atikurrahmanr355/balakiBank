@@ -36,13 +36,7 @@ withdrawDeposit.addEventListener('click', function(){
     const withdrawAmounts = parseFloat(withdrawAmount);
 
     spanTextUpdates('currentWithdraw',withdrawAmounts);
-
-
-    const currentBalance = document.getElementById('currentBalance').innerText;
-    const currentBalances = parseFloat(currentBalance);
-    const totalBalance = currentBalances - withdrawAmounts;
-    
-    document.getElementById('currentBalance').innerText = totalBalance;
+    spanTextUpdates('currentBalance', -1 * withdrawAmounts);
 
     document.getElementById("withdrawAmount").value = "";
 
